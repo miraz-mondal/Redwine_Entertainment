@@ -1,3 +1,4 @@
+/* Navbar */
 html {
   font-size: 10px;
 }
@@ -343,6 +344,12 @@ section {
   transform: scale(1.04);
 }
 
+.gallery-page {
+  all: unset;
+  position: absolute;
+  right: 25px;
+  text-decoration: none;
+}
 
 /* Testimonials  */
 

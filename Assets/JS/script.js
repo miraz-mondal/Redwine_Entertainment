@@ -1,3 +1,4 @@
+// Navbar
 document.querySelector('.hamburger').addEventListener('click', (e) => {
    e.preventDefault();
    
@@ -84,3 +85,4 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
