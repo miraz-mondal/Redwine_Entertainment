@@ -64,7 +64,7 @@ header {
 }
 
 .navigation ul li a:hover {
-  background-color: lightskyblue;
+  background-color: #ea3431;
 }
 
 .navigation.active {
@@ -147,6 +147,20 @@ h3 {
   vertical-align: middle;
 }
 
+.rwe-text1{
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.rwe-text2{
+  font-size: 20px;
+}
+
+.red{
+  color: red;
+  /* font-weight: bold; */
+}
+
 .button-hero {
   position: relative;
   color: red;
@@ -156,7 +170,7 @@ h3 {
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border: 2px solid white;
+  border: 2px solid red;
   border-radius: 1000px;
   padding: 10px 20px;
   margin: 40px;
@@ -176,6 +190,11 @@ h3 {
   animation: pulse 2s infinite 3s cubic-bezier(0.25, 0, 0, 1);
   box-shadow: 0 0 0 0 white;
 }
+
+#hero-response {
+  border-radius: 3px;
+}
+
 @keyframes pulse {
   to {
     box-shadow: 0 0 0 18px rgba(255, 255, 255, 0); 
@@ -197,8 +216,6 @@ h3 {
 
 /* About  */
 .about-container {
-
-
   margin-left: 100px;
   margin-right: 100px;
 }
@@ -332,7 +349,6 @@ section {
 /* Get in Touch  */
 /* color:  red#ec1c24, black#212d31, grey#343a40, white#eee  */
 
-
 .contain {
   background-color: #eee;
   max-width: 1170px;
@@ -356,7 +372,6 @@ div.form {
 }
 
 .form-headline:after {
-  content: "";
   display: block;
   width: 10%;
   padding-top: 10px;
@@ -369,12 +384,12 @@ div.form {
 
 .hightlight-contact-info {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.5;
 }
 
 .highlight-text-grey {
-  font-weight: 500;
+  font-weight: 800;
 }
 
 .email-info {
@@ -388,6 +403,7 @@ div.form {
 .required-input {
   color: black;
 }
+
 @media (min-width: 600px) {
   .contain {
     padding: 0;
@@ -410,6 +426,7 @@ textarea:focus{
 
 .form-input,
 textarea {
+
   width: 100%;
   border: 1px solid #bdbdbd;
   border-radius: 5px;
@@ -461,7 +478,8 @@ button,
 .submit-btn,
 .form-input,
 textarea {
-  padding: 1em;
+  padding: 2em;
+  font-size: small;
 }
 
 button, .submit-btn {
@@ -469,8 +487,9 @@ button, .submit-btn {
   border: 1px solid #ec1c24;
   color: #ec1c24;
   border-radius: 15px;
-  padding: 5px 20px;
+  padding: 8px 20px;
   text-transform: uppercase;
+  font-weight: 500;
 }
 button:hover, .submit-btn:hover,
 button:focus , .submit-btn:focus{
@@ -481,7 +500,6 @@ button:focus , .submit-btn:focus{
 .error {
   color: #ec1c24;
 }
-
 
 
 /* Footer */
@@ -531,11 +549,6 @@ button:focus , .submit-btn:focus{
 
 .google {
   background-color: #d6492f;
-  color: #ffffff;
-}
-
-.apple {
-  background-color: #424041;
   color: #ffffff;
 }
 
