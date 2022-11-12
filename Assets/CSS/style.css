@@ -10,6 +10,7 @@ body {
   padding: 0;
 }
 
+/* Navbar */
 header {
   position: fixed;
   z-index: 1000;
@@ -106,16 +107,16 @@ left: 0;
 }
 
 .navigation ul li a {
-/*     border-bottom: solid .25px rgba(211, 211, 211, .6); */
+  /* border-bottom: solid .25px rgba(211, 211, 211, .6); */
   display: block;
   font-size: 4rem;
-
 }
 
 .hamburger {
   display: block;
   cursor: pointer;
 }
+
 #hero-response{
   max-width: 100%;
   max-height: 300px;
@@ -220,19 +221,10 @@ h3 {
   margin-right: 100px;
 }
 
-/* .about-child {
-
-
-} */
-
-/* .about-heading {
-  font-size: 40px;
-  justify-content: center;
-} */
-
 .about-text {
   font-size: 16px;
 }
+
 /* Services  */
 .container {
   max-width: 1320px;
@@ -247,7 +239,6 @@ section {
 
 .section-header h3 {
   font-size: 36px;
-
   text-align: center;
   font-weight: 700;
   position: relative;
@@ -310,8 +301,6 @@ section {
   font-size: 18px;
 }
 
-
-
 #services .box:hover .title a {
   color: #c59c35;
 }
@@ -325,13 +314,11 @@ section {
   text-align: left;
 }
 
-
 /* New Events  */
 .container-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  /* background: teal; */
   padding: 15px;
 }
 .container-gallery img {
@@ -353,8 +340,6 @@ section {
 /* Testimonials  */
 
 /* Get in Touch  */
-/* color:  red#ec1c24, black#212d31, grey#343a40, white#eee  */
-
 .contain {
   background-color: #eee;
   max-width: 1170px;
