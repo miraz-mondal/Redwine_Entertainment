@@ -203,6 +203,12 @@ body {
   }
 }
 
+/* Gallery */
+/* a img {
+  height: 500px;
+  width: 500px;
+} */
+
 /* Footer */
 .bg-footer {
   background-color: #33383c;

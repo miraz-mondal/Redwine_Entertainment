@@ -1,4 +1,3 @@
-/* Navbar */
 html {
   font-size: 10px;
 }
@@ -344,7 +343,7 @@ section {
   transform: scale(1.04);
 }
 
-.gallery-page {
+.gallery-page-icon {
   all: unset;
   position: absolute;
   right: 25px;
