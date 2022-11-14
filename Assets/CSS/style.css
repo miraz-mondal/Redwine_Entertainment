@@ -64,6 +64,15 @@ header {
   transition: all .6s ease-in-out;
 }
 
+.navbar-text{
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.navbar-subtext {
+  color: white;
+}
+
 .navigation ul {
   display: flex;
 }
@@ -168,11 +177,6 @@ h3 {
   vertical-align: middle;
 }
 
-.rwe-text1{
-  font-size: 50px;
-  font-weight: bolder;
-}
-
 .rwe-text2{
   font-size: 20px;
 }
@@ -237,12 +241,31 @@ h3 {
 
 /* About  */
 .about-container {
-  margin-left: 100px;
-  margin-right: 100px;
+  display: flex;
 }
+
+.about-child {
+  flex: 1;
+
+}
+
+.about-photo{
+  text-align: center; 
+}
+
+/* .about-photo figure {
+  margin:0px 20px; 
+
+  display:inline-block;
+  text-decoration:none;
+  color:black;
+  border: solid 5px black; 
+} */
 
 .about-text {
   font-size: 16px;
+  border: solid 5px black;
+  /* margin-right: 10%; */
 }
 
 /* Services  */

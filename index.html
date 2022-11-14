@@ -14,12 +14,14 @@
 
    <!-- Navbar -->
    <header>
-      <div class="logo"> <img src="./Assets/Media/logo.jpg" alt="Redwine Entertainment" height="80px" width="100px"> </div>
+    <p class="navbar-text"> <span class="red">Red</span> <span class="navbar-subtext">wine Entertainment</span> </p>
+      <!-- <div class="logo"> <img src="./Assets/Media/logo.jpg" alt="Redwine Entertainment" height="80px" width="100px"> </div> -->
       <nav class="navigation" id="nav-close">
           <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#anchor-about">About</a></li>
               <li><a href="#anchor-services">Services</a></li>
+              <li><a href="./event.html" target="_blank">Events</a></li>
               <li><a href="./Gallery.html" target="_blank">Gallery</a></li>
               <li><a href="#anchor-contact">Contact</a></li>
           </ul>
@@ -35,11 +37,15 @@
 <!-- Hero Section -->
 <div class="hero-main">
 <div class="hero-text child">
-    <p class="rwe-text1"> <span class="red">Red</span>wine Entertainment</p>
-    <p class="rwe-text2">Best event management agency in town!</p>
+  <div class="logo"> <img src="./Assets/Media/logo.jpg" alt="Redwine Entertainment" height="400px" width="400px"> </div>
+    <p class="rwe-text2">A single window entertainment and media house!</p>
    
    <a href="#anchor-contact">
    <button class="button-hero button-pulse">Book Now!</button>
+   </a>
+
+   <a href="./event.html" target="_blank">
+    <button class="button-hero button-pulse">Our Events!</button>
    </a>
    
 </div>
@@ -49,13 +55,20 @@
 </div>
 
   <!-- About -->
-<center>
+<a id="anchor-about"><h3>About us</h3></a>
 <div class="about-container">
-   <a id="anchor-about"><h3>About us</h3></a>
+  <div class="about-photo about-child">
+      <figure>
+          <img src="./Assets/Media/3.jpg" alt="Abhijit Gupta" height="300px" width="300px">
+          <figcaption>Abhijit Gupta</figcaption>
+      </figure>
+  </div>
+
+  <div class="about-child">
    <p class="about-text"> <span class="red">REDWINE ENTERTAINMENT</span> house is in its hub of activity to its penchant drive with unique creativity and event conductance of any in magnitude, concept to its creativity, it is a theme by itself, visualisation to the tailor made customer requirements, differs to its unique un-comparable status. We are fostering & nurturing talent and team work, enhancing leadership qualities to be in pace with passion associated to match the modern trends. It is an epicentre fort of Multilingual Entertainment, under single roof of corporate house, cultural & services to state & central govt. departments alike,now in progress, the production of two mega serials, a big screen commercial film content work under our own banner in progress.</p>
-   
+  </div>
 </div>
-</center>
+
 
   <!-- Services -->
   <section class="services section-bg" id="services">
@@ -238,7 +251,7 @@
          <li style="font-size: 13px;">We have succefully organised events for 10 years for our clients. Ready to know how we can help you?</li>
          <span class="hightlight-contact-info">
            <li class="email-info"><i class="fa fa-envelope" aria-hidden="true"></i>entertainmentredwine@gmail.com</li>
-           <li><i class="fa fa-phone" aria-hidden="true"></i> <span class="highlight-text">+033 2412 8057</span></li>
+           <li><i class="fa fa-phone" aria-hidden="true"></i> <span class="highlight-text">+91 6292298355</span></li>
          </span>
        </ul>
      </div>
