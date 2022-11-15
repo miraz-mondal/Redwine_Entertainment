@@ -21,7 +21,6 @@ body {
   background: #ffffff;
 }
 
-/* Navbar */
 html {
   font-size: 10px;
 }
@@ -36,7 +35,7 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 1rem;
 }
 
 /* Track */
@@ -54,6 +53,7 @@ body {
   background: red; 
 }
 
+/* Navbar */
 header {
   position: fixed;
   z-index: 1000;
@@ -81,6 +81,20 @@ header {
 .logo {
   font-size: 2.5rem;
   color: #fff;
+}
+
+.navbar-text{
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.navbar-subtext {
+  color: white;
+}
+
+.red{
+  color: red;
+  /* font-weight: bold; */
 }
 
 .navigation {

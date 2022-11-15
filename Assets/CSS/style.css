@@ -12,7 +12,7 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 1rem;
 }
 
 /* Track */
@@ -188,7 +188,26 @@ h3 {
 
 .button-hero {
   position: relative;
+  color: white;
+  background-color: red;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid red;
+  border-radius: 1000px;
+  padding: 10px 20px;
+  margin: 40px;
+  box-shadow: 0 2px 5px 0 rgba(3, 6, 26, 0.15);
+  transition: 0.5s all ease-in-out;
+}
+
+.button-hero1 {
+  position: relative;
   color: red;
+  background-color: white;
   font-size: 15px;
   font-weight: 700;
   text-decoration: none;
@@ -242,15 +261,19 @@ h3 {
 /* About  */
 .about-container {
   display: flex;
+  flex-direction: row;
 }
 
-.about-child {
-  flex: 1;
+/* .about-child {
 
-}
+} */
 
 .about-photo{
   text-align: center; 
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 30px;
 }
 
 /* .about-photo figure {
@@ -266,6 +289,14 @@ h3 {
   font-size: 16px;
   border: solid 5px black;
   /* margin-right: 10%; */
+}
+
+@media (max-width: 800px) {
+  .about-container {
+    flex-direction: column;
+    margin-bottom: 10%;
+    text-align: center;
+  }
 }
 
 /* Services  */

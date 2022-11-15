@@ -21,7 +21,6 @@ body {
   background: #ffffff;
 }
 
-/* Navbar */
 html {
     font-size: 10px;
   }
@@ -36,7 +35,7 @@ html {
   
   /* width */
   ::-webkit-scrollbar {
-    width: 20px;
+    width: 1rem;
   }
   
   /* Track */
@@ -54,6 +53,7 @@ html {
     background: red; 
   }
   
+  /* Navbar */
   header {
     position: fixed;
     z-index: 1000;
@@ -177,4 +177,47 @@ html {
     font-weight: 700;
     position: relative;
     font-family: "Montserrat", sans-serif;
+  }
+
+  .navbar-text{
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  
+  .navbar-subtext {
+    color: white;
+  }
+  
+  .red{
+    color: red;
+    /* font-weight: bold; */
+  }
+
+  /* Content */
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+  }
+
+  .heading {
+    color: red;
+    font-weight: 800;
+    font-size: medium;
+  }
+
+  .event-content {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+  }
+
+  @media (max-width: 800px) {
+    .main-container {
+      flex-direction: column;
+      margin-bottom: 10%;
+      text-align: center;
+    }
   }
