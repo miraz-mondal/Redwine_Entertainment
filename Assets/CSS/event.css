@@ -203,6 +203,16 @@ html {
     margin-top: 30px;
   }
 
+  .main-container-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    margin-bottom: 30%;
+  }
+
   .heading {
     color: red;
     font-weight: 800;
@@ -221,3 +231,11 @@ html {
       text-align: center;
     }
   }
+
+  /* Footer */
+.bg-footer {
+  background-color: #33383c;
+  color: #acacac;
+  text-align: center;
+  padding: 15px 0 30px;
+}
