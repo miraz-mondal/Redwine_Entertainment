@@ -16,7 +16,7 @@ const emailEl = document.querySelector("#email");
 const companyNameEl = document.querySelector("#company-name");
 const messageEl = document.querySelector("#message");
 
-const form = document.querySelector("#submit-form");
+const form = document.querySelector("#submit-form1");
 
 function checkValidations() {
  let letters = /^[a-zA-Z\s]*$/;
@@ -59,6 +59,20 @@ function reset() {
  messageEl = "";
  document.querySelector(".name-error").innerText = "";
 }
+
+// Form
+var formsheetdb = document.getElementById('sheetdb-form');
+formsheetdb.addEventListener("submit", e => {
+  e.preventDefault();
+  fetch(formsheetdb.action, {
+      method : "POST",
+      body: new FormData(document.getElementById("sheetdb-form")),
+  }).then(
+      response => response.json()
+  ).then((html) => {
+    alert('success')
+  });
+});
 
 // Back to top button
 //Get the button
