@@ -16,7 +16,7 @@ const emailEl = document.querySelector("#email");
 const companyNameEl = document.querySelector("#company-name");
 const messageEl = document.querySelector("#message");
 
-const form = document.querySelector("#submit-form1");
+const form1 = document.querySelector("#submit-form1");
 
 function checkValidations() {
  let letters = /^[a-zA-Z\s]*$/;
@@ -61,16 +61,16 @@ function reset() {
 }
 
 // Form
-var formsheetdb = document.getElementById('sheetdb-form');
-formsheetdb.addEventListener("submit", e => {
+const form = document.getElementById('sheetdb-form');
+form.addEventListener("submit", e => {
   e.preventDefault();
-  fetch(formsheetdb.action, {
+  fetch(form.action, {
       method : "POST",
       body: new FormData(document.getElementById("sheetdb-form")),
   }).then(
       response => response.json()
   ).then((html) => {
-    alert('success')
+    alert('Thank you for contacting!')
   });
 });
 
