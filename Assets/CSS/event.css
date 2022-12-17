@@ -198,11 +198,14 @@ html {
   .main-container-icon {
     display: flex;
   }
+
   .icon-wrapper{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-left: 2rem;
+    margin-right: 7rem;
   }
 
   .heading {
