@@ -240,22 +240,21 @@ html {
       text-align: center;
       padding: 15px 0 30px;
       width: 100%;
-      margin-bottom: 0;
-      display: inline-block;
+      position: static !important;
     }
 
   }
 
   /* Footer */
-.bg-footer {
-  background-color: #33383c;
-  color: #acacac;
-  text-align: center;
-  padding: 15px 0 30px;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-}
+  .bg-footer {
+    background-color: #33383c;
+    color: #acacac;
+    text-align: center;
+    padding: 15px 0 30px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
 
 /* Back to top button */
 #btn-back-to-top {
@@ -267,3 +266,10 @@ html {
   width: 50px;
   height: 50px;
 }
+
+/* @media (max-width: 1600px) {
+  .bg-footer {
+    position: fixed;
+  }
+
+} */
