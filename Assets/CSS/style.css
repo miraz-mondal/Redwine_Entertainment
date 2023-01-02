@@ -206,7 +206,7 @@ h3 {
 
 .red {
   color: red;
-  /* font-weight: bold; */
+  font-weight: bold;
 }
 
 .button-hero {
@@ -322,6 +322,7 @@ justify-content: space-between;
 
 .about-text {
   font-size: 16px;
+  /* font-weight: bold; */
 
   /* border: solid 5px black; */
   /* margin-right: 10%; */

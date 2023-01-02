@@ -196,12 +196,12 @@ html {
   .heading {
     color: red;
     font-weight: 800;
-    font-size: medium;
+    font-size: 2rem;
   }
 
   .event-content {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: larger;
+    font-size: 1.5rem;
   }
 
   #brand-icon {
@@ -232,6 +232,7 @@ html {
       justify-content: center;
       align-items: center;
       margin-bottom: 100px;
+      display: none;
     }
 
     footer {
@@ -245,13 +246,17 @@ html {
 
   }
 
+  .responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
   /* Footer */
   .bg-footer {
     background-color: #33383c;
     color: #acacac;
     text-align: center;
     padding: 15px 0 30px;
-    position: fixed;
     width: 100%;
     bottom: 0;
   }
