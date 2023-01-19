@@ -1,1 +1,1 @@
-/*.html  /:splat  200!
+/:path.html  /:path  301!
