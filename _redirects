@@ -1,1 +1,3 @@
-/:path.html  /:path  301!
+/:index.html  /:path  301!
+/:event.html  /:path  301!
+/:Gallery.html  /:path  301!
