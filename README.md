@@ -1,2 +1,3 @@
 # Redwine Entertainment
- Event management website 
+## Landing Page
+ ![Landing Page](./Assets/Media/landing.png "Landing Page")
