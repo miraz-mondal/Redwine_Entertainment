@@ -1,4 +1,6 @@
 html {
+  scroll-behavior: smooth;
+  scroll-padding: 10rem;
   font-size: 10px;
 }
 
@@ -601,7 +603,6 @@ textarea:focus{
 
 .form-input,
 textarea {
-
   width: 100%;
   border: 1px solid #bdbdbd;
   border-radius: 5px;
@@ -610,6 +611,7 @@ textarea {
 .wrapper > * {
   padding: 1em;
 }
+
 @media (min-width: 700px) {
   .wrapper {
     display: grid;
@@ -638,9 +640,11 @@ form {
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
+
 form label {
   display: block;
 }
+
 form p {
   margin: 0;
 }
@@ -672,6 +676,7 @@ button:focus , .submit-btn:focus{
   outline: 0;
   color: #eee;
 }
+
 .error {
   color: #ec1c24;
 }
