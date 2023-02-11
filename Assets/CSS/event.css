@@ -156,7 +156,8 @@ html {
   }
 
   .navbar-text {
-    font-size: 20px;
+    padding-top: 20px;
+    font-size: 27px;
     font-weight: bolder;
   }
   
@@ -330,10 +331,3 @@ html {
   width: 50px;
   height: 50px;
 }
-
-/* @media (max-width: 1600px) {
-  .bg-footer {
-    position: fixed;
-  }
-
-} */

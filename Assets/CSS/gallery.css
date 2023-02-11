@@ -60,8 +60,9 @@ header {
   color: #fff;
 }
 
-.navbar-text{
-  font-size: 20px;
+.navbar-text {
+  padding-top: 20px;
+  font-size: 27px;
   font-weight: bolder;
 }
 
