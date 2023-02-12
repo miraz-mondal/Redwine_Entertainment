@@ -113,7 +113,7 @@ header {
 
 .navigation {
   position: fixed;
-  top: 6rem;
+  top: 8rem;
   left: 100%;
   width: 100%;
   height: 100%;
@@ -140,7 +140,6 @@ header {
 }
 
 .navigation ul li a {
-  /* border-bottom: solid .25px rgba(211, 211, 211, .6); */
   display: block;
   font-size: 4rem;
   margin: 0;
@@ -313,21 +312,8 @@ justify-content: space-between;
   margin-top: 3px;
 }
 
-/* .about-photo figure {
-  margin:0px 20px; 
-
-  display:inline-block;
-  text-decoration:none;
-  color:black;
-  border: solid 5px black; 
-} */
-
 .about-text {
   font-size: 16px;
-  /* font-weight: bold; */
-
-  /* border: solid 5px black; */
-  /* margin-right: 10%; */
 }
 
 @media (max-width: 800px) {
@@ -351,6 +337,7 @@ justify-content: space-between;
 	margin-left: -50vw;
 	margin-right: -50vw;
 }
+
 .marquee-box {
 	overflow-x: hidden !important;
 	display: flex !important;
@@ -358,6 +345,7 @@ justify-content: space-between;
 	position: relative;
 	width: 100%;
 }
+
 .marquee {
 	flex: 0 0 auto;
 	min-width: 100%;
@@ -370,6 +358,7 @@ justify-content: space-between;
 	animation-delay: 0s;
 	animation-direction: normal;
 }
+
 .marquee figure-client
 {
 	margin-right: 3rem;
@@ -379,6 +368,7 @@ justify-content: space-between;
 	text-align: center;
 	vertical-align: top;
 }
+
 .marquee figcaption
 {
 	display:none;
