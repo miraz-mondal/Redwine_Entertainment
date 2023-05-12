@@ -160,6 +160,7 @@ header {
 }
 
 h3 {
+  margin: 2rem;
   font-size: 36px;
   text-align: center;
   font-weight: 700;
@@ -168,6 +169,7 @@ h3 {
 }
 
 .container {
+  margin-bottom: 4.5rem;
   max-width: 120rem;
   width: 100%;
   padding: 1rem 2rem;
