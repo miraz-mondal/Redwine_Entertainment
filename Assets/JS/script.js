@@ -1,13 +1,12 @@
-"use strict"
+"use strict";
 // Navbar
-document.querySelector('.hamburger').addEventListener('click', (e) => {
+document.querySelector(".hamburger").addEventListener("click", (e) => {
   e.preventDefault();
-  
-  document.querySelector('.navigation').classList.toggle('active');
-  
+
+  document.querySelector(".navigation").classList.toggle("active");
 });
 document.querySelector("#nav-close").addEventListener("click", () => {
-   document.querySelector(".navigation").classList.remove("active");
+  document.querySelector(".navigation").classList.remove("active");
 });
 
 // Contact
@@ -19,59 +18,57 @@ const messageEl = document.querySelector("#message");
 const form1 = document.querySelector("#submit-form1");
 
 function checkValidations() {
- let letters = /^[a-zA-Z\s]*$/;
- const name = nameEl.value.trim();
- const email = emailEl.value.trim();
- const companyName = companyNameEl.value.trim();
- const message = messageEl.value.trim();
- if (name === "") {
+  let letters = /^[a-zA-Z\s]*$/;
+  const name = nameEl.value.trim();
+  const email = emailEl.value.trim();
+  const companyName = companyNameEl.value.trim();
+  const message = messageEl.value.trim();
+  if (name === "") {
     document.querySelector(".name-error").classList.add("error");
-     document.querySelector(".name-error").innerText =
-       "Please fill out this field!";
- } else {
-   if (!letters.test(name)) {
-     document.querySelector(".name-error").classList.add("error");
-     document.querySelector(".name-error").innerText =
-       "Please enter only characters!";
-   } else {
-     
-   }
- }
- if (email === "") {
+    document.querySelector(".name-error").innerText =
+      "Please fill out this field!";
+  } else {
+    if (!letters.test(name)) {
+      document.querySelector(".name-error").classList.add("error");
+      document.querySelector(".name-error").innerText =
+        "Please enter only characters!";
+    } else {
+    }
+  }
+  if (email === "") {
     document.querySelector(".name-error").classList.add("error");
-     document.querySelector(".name-error").innerText =
-       "Please fill out this field!";
- } else {
-   if (!letters.test(name)) {
-     document.querySelector(".name-error").classList.add("error");
-     document.querySelector(".name-error").innerText =
-       "Please enter only characters!";
-   } else {
-     
-   }
- }
+    document.querySelector(".name-error").innerText =
+      "Please fill out this field!";
+  } else {
+    if (!letters.test(name)) {
+      document.querySelector(".name-error").classList.add("error");
+      document.querySelector(".name-error").innerText =
+        "Please enter only characters!";
+    } else {
+    }
+  }
 }
 
 function reset() {
- nameEl = "";
- emailEl = "";
- companyNameEl = "";
- messageEl = "";
- document.querySelector(".name-error").innerText = "";
+  nameEl = "";
+  emailEl = "";
+  companyNameEl = "";
+  messageEl = "";
+  document.querySelector(".name-error").innerText = "";
 }
 
 // Form
-const form = document.getElementById('sheetdb-form');
-form.addEventListener("submit", e => {
+const form = document.getElementById("sheetdb-form");
+form.addEventListener("submit", (e) => {
   e.preventDefault();
   fetch(form.action, {
-      method : "POST",
-      body: new FormData(document.getElementById("sheetdb-form")),
-  }).then(
-      response => response.json()
-  ).then((html) => {
-    alert('Thank you for contacting!')
-  });
+    method: "POST",
+    body: new FormData(document.getElementById("sheetdb-form")),
+  })
+    .then((response) => response.json())
+    .then((html) => {
+      alert("Thank you for contacting!");
+    });
 });
 
 // Back to top button
@@ -80,23 +77,20 @@ let mybutton = document.getElementById("btn-back-to-top");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
- scrollFunction();
+  scrollFunction();
 };
 
 function scrollFunction() {
- if (
-   document.body.scrollTop > 20 ||
-   document.documentElement.scrollTop > 20
- ) {
-   mybutton.style.display = "block";
- } else {
-   mybutton.style.display = "none";
- }
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
 }
 
 // When the user clicks on the button, scroll to the top of the document
 mybutton.addEventListener("click", backToTop);
 function backToTop() {
- document.body.scrollTop = 0;
- document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }

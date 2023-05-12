@@ -17,17 +17,17 @@ html {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px grey;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #b30000; 
+  background: #b30000;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: red; 
+  background: red;
 }
 
 /* Navbar */
@@ -75,7 +75,7 @@ header {
 }
 
 .navigation {
-  transition: all .6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .navigation ul {
@@ -95,7 +95,7 @@ header {
   width: 100%;
   padding: 2rem;
   display: inline-block;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .navigation ul li a:hover {
@@ -108,57 +108,55 @@ header {
 
 @media only screen and (max-width: 900px) {
   header {
-      padding: 0 5rem;
+    padding: 0 5rem;
   }
 
-.navigation {
-  position: fixed;
-  top: 8rem;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: #24252a;
-}
+  .navigation {
+    position: fixed;
+    top: 8rem;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #24252a;
+  }
 
-.navigation ul {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #24252a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
-}
+  .navigation ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #24252a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
 
-.navigation ul li {
-  width: 100%;
-  text-align: center;
-  background-color: #24252a;
-}
+  .navigation ul li {
+    width: 100%;
+    text-align: center;
+    background-color: #24252a;
+  }
 
-.navigation ul li a {
-  display: block;
-  font-size: 4rem;
+  .navigation ul li a {
+    display: block;
+    font-size: 4rem;
+  }
 
-}
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
 
-.hamburger {
-  display: block;
-  cursor: pointer;
-}
+  #hero-response {
+    max-width: 100%;
+    max-height: 300px;
+  }
 
-#hero-response { 
-  max-width: 100%;
-  max-height: 300px;
-}
-
-#map-image{
-  max-width: 100%;
-}
-
+  #map-image {
+    max-width: 100%;
+  }
 }
 
 h3 {
@@ -279,7 +277,7 @@ h3 {
 
 .footer-heading:after {
   width: 25px;
-  border-bottom: 1px solid #FFF;
+  border-bottom: 1px solid #fff;
   position: absolute;
   left: 0;
   bottom: 0;
